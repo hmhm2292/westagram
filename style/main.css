@@ -1,0 +1,412 @@
+*{
+    box-sizing: border-box;
+}
+
+
+input:focus, input:active, button:focus {
+    outline: none;
+}
+
+.body, .mainFeed, .searchBar, textarea, .post, .userId, .likeCount, .storiesLabel, .watchAll, .suggestionsLabel, .seeAll, .follow, .reference, .allMyFollowers {
+    color: #262626;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+.mainFeed, .storiesBox, .suggestionsForYouBox, .allMyFollowers {
+    border: 1px solid #efefef;
+    background-color: white;
+    border-radius: 4px;
+}
+
+body{
+    margin: 0px;
+}
+
+.navBar {
+    width:100%;
+    height: 77px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
+
+.navBarGroup {
+    width: 1010px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 26px 20px;
+}
+
+.navBarLeft {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: auto;
+    height: 30px;
+    width: 40%;
+}
+
+.cameraLogo img {
+    height: 24px;
+    width: 24px;
+    margin-top: 2px;
+}
+
+.splitBar {
+    background-color: #262626;
+    height: 28px;
+    margin: 0 16px;
+    width: 0.55px;
+}
+
+.instaLogo img {
+    height: 33px;
+    width: 104px;
+    margin-top: 1px;
+}
+
+.navSearchBar {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 215px;
+   
+}
+
+.searchBar {
+    background-color:#fafafa;
+    padding: 5px 0;
+    width:210px;
+    border-radius: 3px;
+    color: #dbdbdb;;
+    cursor: text;
+    font-weight: 300;
+    border: solid 1px #dbdbdb;
+    text-align:center; 
+    margin-bottom: 24px;
+}
+
+
+.allMyFollowers {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-align:center;
+    overflow:scroll;
+
+    
+}
+
+.followers {
+    padding: 20px;
+    margin: 0px;
+    font-weight: 600;
+    border-bottom: 1px solid #efefef;
+    background-color: white;
+}
+
+.navBarRight {
+    display:flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    height: 30px;
+    width: 40%;
+}
+
+.explore, .myActivity, .myAccount {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.explore {
+    height: 25px;
+    width: 25px;
+    background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png");
+}
+
+.myActivity {
+    height: 26px;
+    width: 26px;
+    margin-right: 28px;
+    margin-left: 28px;
+    background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png");
+}
+
+.myAccount {
+    height: 25px;
+    width: 25px;
+    background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png");
+}
+
+main {
+    padding: 60px 0px;
+    margin: 0px 252px;
+    display: flex;
+    justify-content: space-between;
+}
+.mainFeed {
+    width: 614px;
+}
+
+.mainFeedTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.userIcon {
+    height: 44px;
+    width: 44px;
+    border: none;
+    border-radius: 50%;
+    padding: 4px;
+    margin-left: 10px;   
+}
+
+.userAndOption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 6px;
+    margin-right: 6px;
+}
+
+.userId, .likesCount, .watchAll, .storiesLabel, .suggestionsLabel, .seeAll{
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.optionIcon {
+    background-image: url("https://icon-library.net/images/3-dots-icon/3-dots-icon-24.jpg");
+    height: 14px;
+    width: 14px;
+    background-size: contain;
+}
+
+.feedImage {
+    width: 100%;
+}
+
+.toolBar {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 17px;
+}
+
+.tools {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+
+.likeButton, .commentButton, .shareButton, .bookmarkButton {
+    height: 24px;
+    width: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 18px;
+    border: none;
+}
+
+.likeButton {
+    background-image: url("https://cdn3.iconfinder.com/data/icons/basic-user-interface-application/32/INSTAGRAM_ICON_SETS-04-512.png");
+    height: 26px;
+    width: 26px;
+}
+
+.commentButton {
+    background-image: url("https://cdn3.iconfinder.com/data/icons/basic-user-interface-application/32/INSTAGRAM_ICON_SETS-06-512.png");
+}
+
+.shareButton {
+    background-image: url("https://cdn3.iconfinder.com/data/icons/basic-user-interface-application/32/INSTAGRAM_ICON_SETS-21-512.png");
+}
+
+
+.bookmarkButton {
+    background-image: url("https://cdn3.iconfinder.com/data/icons/basic-user-interface-application/32/INSTAGRAM_ICON_SETS-07-512.png");
+    margin: 0px;
+}
+
+.likesCount, .descriptionSection {
+    padding: 0px 0px 0px 16px;
+    margin: 0px 0px 8px; 
+}
+
+.descriptionSection {
+    margin: 0px;
+    
+}
+
+.description {
+    font-weight: normal;
+    word-break: break-word;
+}
+
+.myCommentSection {
+    max-height: 100px;
+    overflow-y: scroll;
+}
+
+
+.commentList {
+    padding: 0px 0px 0px 16px;
+    list-style: none;
+    margin: 2px 0px;
+}
+
+
+.comment {
+    font-weight: normal;
+}
+
+.writeComment {
+    padding: 0px 16px 0px 16px;
+    margin-top: 0px 4px;
+    border-top: 1px solid #efefef;
+    overflow: scroll;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.typeYourComment {
+    display: flex;
+    height: 56px;
+    width: 100%;
+    align-items: center;
+}
+
+textarea {
+    width:100%;
+    height: 28px;
+    overflow: scroll;
+    resize: none;
+    outline: none;
+    border:none;
+    padding: 0px;
+}
+
+.mainRight {
+    width: 293px;
+    height: 530px;
+}
+
+.post, .follow {
+    border: none;
+    color: #3897F0;
+    font-weight: 600;
+}
+
+.mainUserId, .storiesList, .suggestionsList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 12px;
+    
+}
+
+.mainUserId .userIcon {
+padding: 0px;
+height: 50px;
+width: 50px;
+}
+
+.mainUserId .userId, .storiesList .userId, .suggestionsList .userId {
+    margin-left: 10px;
+}
+
+.storiesBox {
+    height: 223px;
+}
+
+.storiesAndWatch, .suggestionsSeeAll {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    padding-top: 4px;
+}
+
+.storiesLabel, .suggestionsLabel {
+    color: #999999;
+    margin-left: 12px;
+}
+
+.watchAll, .seeAll {
+    border: none;
+    padding: 0px;
+    margin-right: 12px;
+    
+}
+
+.suggestionsForYouBox {
+    height: 200px;
+    margin: 12px 0px; 
+}
+
+.storiesBox, .suggestionsForYouBox {
+    overflow: scroll;
+}
+
+.seeAll {
+    font-size: 12px;
+}
+
+.iconButton {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.storiesList, .suggestionsList {
+    margin-top: 12px;
+}
+
+.iconButton .userIcon {
+    padding: 0px;
+}
+
+.follow {
+    font-size: 12px;
+}
+
+.suggestionsList .userId {
+    width: 165px;
+}
+
+.referenceBox {
+    height: 39px;
+    
+}
+
+.referenceList {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.reference {
+    color: #c7c7c7;
+    font-size: 11px;
+}
+
+.reference:after {
+    content: '•';
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.color {
+    color: red;
+}
